@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Background */
+body {
+  min-height: 100vh;
+  background: url("background.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main container (glass effect) */
+.main-container {
+    width: 100%;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 20px;
+
+  background: rgba(20, 20, 40, 0.7);
+  backdrop-filter: blur(4px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+.form{
+    width: 100%;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+
+/* Header */
+.head-container {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.Logo {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.head-container h1 {
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+/* Input sections */
+.input-container,
+.gender-input-container {
+  margin-bottom: 30px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #ddd;
+  font-size: 20px;
+}
+
+/* Bigger radio buttons */
+input[type="radio"] {
+  accent-color: #9b5cff;
+  width: 20px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Space between options */
+.option-box {
+  display: flex;
+  gap: 40%; /* increase space between Male & Female */
+  margin-top: 15px;
+}
+
+/* Align each option nicely */
+.option-box div {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between circle and text */
+  color: white;
+  font-size: 15px;
+}
+
+/* Inputs & selects */
+input, select{
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+
+  font-size: 20px;
+  transition: 0.3s;
+}
+select {
+  appearance: none;
+  color: rgb(47, 47, 47);
+    width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+/* Placeholder color */
+input::placeholder {
+  color: #aaa;
+  
+}
+
+/* Focus effect */
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #9b5cff;
+  box-shadow: 0 0 8px rgba(155, 92, 255, 0.6);
+}
+
+/* Gender options
+.option-box {
+  display: flex;
+  gap: 25px;
+  margin-top: 5px;
+}
+
+.option-box div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white; */
+
+/* Button */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(45deg, #9b5cff, #6a11cb);
+  color: white;
+
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+button:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+/* ========================= */
+/* 📱 Responsive Design */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 90%;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    align-items: flex-start;
+  }
+
+  .main-container {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .option-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input,
+  select {
+    padding: 10px;
+  }
+
+  button {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+     <title>Academy Registration Form</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Container for the entire form -->
+    <div class="main-container">
+      <!-- the head of the form -->
+      <div class="head-container">
+        <img src="logo.png" class="Logo" alt="Logo"/>
+        <h1>Aviation club 2026</h1>
+      </div>
+      <!-- the start of the actual form -->
+      <form class="form"> 
+
+        <!-- container for Name input field -->
+        <div class="input-container">
+          <label for="name">  Name (In English) </label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter Your Full Name"
+            id="name"
+            required
+          />
+        </div>
+
+
+        <!-- container for Email input field -->
+        <div class="input-container">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Your Email"
+            required
+          />
+        </div>
+
+
+        <!-- container for Phone input field -->
+        <div class="input-container">
+          <label for="tel">Telephone number</label>
+          <input
+            type="tel"
+            name="telephone"
+            id="tel"
+            placeholder="Enter Your Telephone Number"
+            minlength="11"
+            maxlength="11"
+            required
+          />
+        </div>
+
+
+        <!-- container for Gender input field (gender box)
+        <div class="gender-input-container">
+          <label>Gender</label>
+          <div class="option-box">
+            <div>
+              <input
+                type="radio"
+                name="gender"
+                id="h1"
+                value="female"
+                required
+              />
+              <label for="h1"> Female</label>
+            </div>
+            <div>
+              <input type="radio" name="gender" id="h2" value="male" required />
+              <label for="h2">Male</label>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- container for each Academic year field -->
+        <div class="input-container">
+          <label for="academicyear">Academic year</label>
+          <select name="academicyear" id="academicyear" required>
+            <option value="" selected disabled>Choose Your Academic Year</option>
+            <option value="freshman">Freshman</option>
+            <option value="sophomore">sophomore</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior 1</option>
+            <option value="senior">Senior 2</option>
+
+
+          </select>
+        </div>
+
+
+        <!-- container for Department input field -->
+        <div class="input-container">
+          <label for="department">Department</label>
+          <select name="department" id="department" required>
+            <option value="" selected="true" disabled="disabled">Choose Your Department</option>
+            <option value="electrical">Electrical</option>
+            <option value="mechanical">Mechanical</option>
+            <option value="architecture">Architecture</option>
+            <option value="civil">Civil</option>
+          </select>
+        </div>
+
+
+        <!-- container for each input field -->
+        <div class="input-container">
+          <label for="first">First preference</label>
+          <select name="firstpreference" id="first">
+            <option value="" selected disabled>First preference</option>
+            <option>IT</option>
+            <option>Arduino</option>
+            <option>Matlab</option>
+            <option>Embeded systems</option>
+          </select>
+        </div>
+
+        <!-- container for each input field -->
+        <div class="input-container">
+          <label for="second">Second preference</label>
+          <select name="secondpreference" id="second">
+            <option value="" selected disabled>Second preference</option>
+            <option>IT</option>
+            <option>Arduino</option>
+            <option>Matlab</option>
+            <option>Embeded systems</option>
+          </select>
+        </div>
+
+      </form>
+                          <button type="submit">Submit</button>
+
+
+    </div>
+    
+  </body>
+</html>
