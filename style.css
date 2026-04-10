@@ -20,6 +20,7 @@ body {
 .main-container {
     width: 100%;
   max-width: 800px;
+  max-height: 750px;
   padding: 30px;
   border-radius: 20px;
 
@@ -31,7 +32,7 @@ body {
 }
 .form{
     width: 100%;
-    max-height: 500px;
+    max-height: 420px;
     overflow-y: scroll;
 }
 
