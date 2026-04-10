@@ -7,8 +7,9 @@
 
 /* Background */
 body {
-  min-height: 100vh;
+  height: 100vh;
   background: url("Background.png") no-repeat center center/cover;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,4 +205,25 @@ button:hover {
   button {
     padding: 12px;
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  background: #3b82f6; /* blue accent */
+  background: linear-gradient(45deg, #9b5cff, #6a11cb);
+}
+
+/* hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #9b5cff, #6a11cb);
 }
