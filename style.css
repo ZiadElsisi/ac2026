@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: "Segoe UI", sans-serif;
 }
-
+html {
+  background-color: #3f284f;
+}
 body {
    min-height: 100dvh; /* dynamic viewport height */
   padding-bottom: env(safe-area-inset-bottom);
@@ -245,7 +247,7 @@ body{
     }
     .form {
         max-height: none;
-        
+
     }
 }
 @media (max-width: 640px) {
