@@ -247,6 +247,9 @@ body{
     margin-top: 20px;
     padding: 20px;
   }
+  .form {
+    max-height: 40vh;
+  }
 
   .option-box {
     flex-direction: column;
