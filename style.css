@@ -239,9 +239,18 @@ body{
   }
 }
 
+@media (max-height: 630px) {
+    body {
+        overflow-y: scroll;
+    }
+    .form {
+        max-height: none;
+        
+    }
+}
 @media (max-width: 640px) {
 body{
-    background: url("Imgs/Backgroundsmall.png") no-repeat center center/ cover;
+    background: url("Imgs/Backgroundsmall.png") no-repeat center center/ cover ; 
 }
 
   .main-container {
