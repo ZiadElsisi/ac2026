@@ -4,15 +4,12 @@
   box-sizing: border-box;
   font-family: "Segoe UI", sans-serif;
 }
-html,body {
-background-color: #160628;
-}
+
 body {
    min-height: 100dvh; /* dynamic viewport height */
   padding-bottom: env(safe-area-inset-bottom);
 
-  background: url("Imgs/Background.png") no-repeat center center/ cover;
-
+  background: url("Imgs/Background.png") no-repeat center center/ cover fixed; ;
   display: flex;
   justify-content: center;
   align-items: center;
