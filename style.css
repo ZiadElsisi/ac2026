@@ -7,7 +7,7 @@
 
 body {
   height: 100vh;
-  background: url("/Imgs/Background.png") no-repeat center center/ cover;
+  background: url("Imgs/Background.png") no-repeat center center/ cover;
 
   display: flex;
   justify-content: center;
@@ -240,7 +240,7 @@ body{
 
 @media (max-width: 640px) {
 body{
-    background: url("/Imgs/Backgroundsmall.png") no-repeat center center/ cover;
+    background: url("Imgs/Backgroundsmall.png") no-repeat center center/ cover;
 }
 
   .main-container {
