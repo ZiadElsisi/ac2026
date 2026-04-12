@@ -4,9 +4,11 @@
   box-sizing: border-box;
   font-family: "Segoe UI", sans-serif;
 }
-
+html,body {
+background-color: #160628;
+}
 body {
-  height: 100vh;
+  height: 100dvh;
   background: url("Imgs/Background.png") no-repeat center center/ cover;
 
   display: flex;
