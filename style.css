@@ -8,7 +8,9 @@ html,body {
 background-color: #160628;
 }
 body {
-  height: 100dvh;
+   min-height: 100dvh; /* dynamic viewport height */
+  padding-bottom: env(safe-area-inset-bottom);
+
   background: url("Imgs/Background.png") no-repeat center center/ cover;
 
   display: flex;
