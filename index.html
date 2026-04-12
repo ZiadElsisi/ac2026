@@ -6,6 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -13,11 +14,11 @@
     <div class="main-container">
       <!-- the head of the form -->
       <div class="head-container">
-        <img src="logo.png" class="Logo" alt="Logo"/>
-        <h1>Aviation club 2026</h1>
+        <img src="/Imgs/logo.png" class="Logo" alt="Logo"/>
+        <h1>Aviation Academy 2026</h1>
       </div>
       <!-- the start of the actual form -->
-      <form class="form"> 
+      <form class="form" id="form"> 
 
         <!-- container for Name input field -->
         <div class="input-container">
@@ -47,39 +48,18 @@
 
         <!-- container for Phone input field -->
         <div class="input-container">
-          <label for="tel">Telephone number</label>
+          <label for="tel">Phone number (Linked to Whatsapp)</label>
           <input
             type="tel"
             name="telephone"
             id="tel"
-            placeholder="Enter Your Telephone Number"
+            placeholder="Enter Your Phone Number"
             minlength="11"
             maxlength="11"
             required
           />
         </div>
 
-
-        <!-- container for Gender input field (gender box)
-        <div class="gender-input-container">
-          <label>Gender</label>
-          <div class="option-box">
-            <div>
-              <input
-                type="radio"
-                name="gender"
-                id="h1"
-                value="female"
-                required
-              />
-              <label for="h1"> Female</label>
-            </div>
-            <div>
-              <input type="radio" name="gender" id="h2" value="male" required />
-              <label for="h2">Male</label>
-            </div>
-          </div>
-        </div> -->
 
         <!-- container for each Academic year field -->
         <div class="input-container">
@@ -98,7 +78,7 @@
 
 
         <!-- container for Department input field -->
-        <div class="input-container">
+        <div class="input-container" id= "departmentContainer" style="display: none;"">
           <label for="department">Department</label>
           <select name="department" id="department" required>
             <option value="" selected="true" disabled="disabled">Choose Your Department</option>
@@ -113,32 +93,44 @@
         <!-- container for each input field -->
         <div class="input-container">
           <label for="first">First preference</label>
-          <select name="firstpreference" id="first">
-            <option value="" selected disabled>First preference</option>
-            <option>IT</option>
-            <option>Arduino</option>
-            <option>Matlab</option>
-            <option>Embeded systems</option>
+          <select name="firstpreference" id="first_preference" required>
+            <option value="" selected disabled>Choose First preference</option>
+            <option value="AI/ML">AI/Machine learning</option>
+            <option value="UI/UX">UI/UX</option>
+            <option value="Web">Web Development</option>
+            <option value="Embedded">Embedded systems</option>
+            <option value="Arduino">Arduino</option>
+            <option value="MATLAB">MATLAB</option>
+            <option value="Solidworks">Solidworks</option>
+            <option value="Jet engine">Jet engine</option>
+
           </select>
         </div>
 
         <!-- container for each input field -->
         <div class="input-container">
           <label for="second">Second preference</label>
-          <select name="secondpreference" id="second">
-            <option value="" selected disabled>Second preference</option>
-            <option>IT</option>
-            <option>Arduino</option>
-            <option>Matlab</option>
-            <option>Embeded systems</option>
+          <select name="secondpreference" id="second_preference" required>
+                <option value="" selected disabled>Choose Second preference</option>
+
+             <option value="AI/ML">AI/Machine learning</option>
+            <option value="UI/UX">UI/UX</option>
+            <option value="Web">Web Development</option>
+            <option value="Embedded">Embedded systems</option>
+            <option value="Arduino">Arduino</option>
+            <option value="MATLAB">MATLAB</option>
+            <option value="Solidworks">Solidworks</option>
+            <option value="Jet engine">Jet engine</option>
           </select>
         </div>
 
       </form>
-                          <button type="submit">Submit</button>
-
+                    <button type="submit" form="form" id="submitBtn">
+                    <span class="btn-text">Submit</span>
+                    <span class="loader"></span>
+                    </button>
 
     </div>
-    
+    <script src="script.js"></script>
   </body>
 </html>
