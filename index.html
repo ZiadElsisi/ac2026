@@ -27,6 +27,7 @@
             type="text"
             name="name"
             placeholder="Enter Your Full Name"
+            autocomplete="name"
             id="name"
             required
           />
@@ -41,6 +42,7 @@
             name="email"
             id="email"
             placeholder="Enter Your Email"
+            autocomplete="email"
             required
           />
         </div>
@@ -51,11 +53,12 @@
           <label for="tel">Phone number (Linked to Whatsapp)</label>
           <input
             type="tel"
-            name="telephone"
+            name="phoneNumber"
             id="tel"
             placeholder="Enter Your Phone Number"
-            minlength="11"
-            maxlength="11"
+            pattern="01[0-9]{9}"
+            autocomplete="tel"
+            inputmode="numeric"
             required
           />
         </div>
@@ -69,8 +72,8 @@
             <option value="freshman">Freshman</option>
             <option value="sophomore">sophomore</option>
             <option value="junior">Junior</option>
-            <option value="senior">Senior 1</option>
-            <option value="senior">Senior 2</option>
+            <option value="senior1">Senior 1</option>
+            <option value="senior2">Senior 2</option>
 
 
           </select>
@@ -78,21 +81,23 @@
 
 
         <!-- container for Department input field -->
-        <div class="input-container" id= "departmentContainer" style="display: none;"">
+        <div class="input-container">
           <label for="department">Department</label>
-          <select name="department" id="department" required>
-            <option value="" selected="true" disabled="disabled">Choose Your Department</option>
+          <select name="department" id="department" >
+            <option value="" selected disabled>Choose Your Department</option>
             <option value="electrical">Electrical</option>
             <option value="mechanical">Mechanical</option>
             <option value="architecture">Architecture</option>
             <option value="civil">Civil</option>
+            <option value="none">None</option>
+
           </select>
         </div>
 
 
         <!-- container for each input field -->
         <div class="input-container">
-          <label for="first">First preference</label>
+          <label for="first_preference">First preference</label>
           <select name="firstpreference" id="first_preference" required>
             <option value="" selected disabled>Choose First preference</option>
             <option value="AI/ML">AI/Machine learning</option>
@@ -103,13 +108,14 @@
             <option value="MATLAB">MATLAB</option>
             <option value="Solidworks">Solidworks</option>
             <option value="Jet engine">Jet engine</option>
+            <option value="Automotive">Automotive</option>
 
           </select>
         </div>
 
         <!-- container for each input field -->
         <div class="input-container">
-          <label for="second">Second preference</label>
+          <label for="second_preference">Second preference</label>
           <select name="secondpreference" id="second_preference" required>
                 <option value="" selected disabled>Choose Second preference</option>
 
@@ -121,6 +127,8 @@
             <option value="MATLAB">MATLAB</option>
             <option value="Solidworks">Solidworks</option>
             <option value="Jet engine">Jet engine</option>
+            <option value="Automotive">Automotive</option>
+
           </select>
         </div>
 
